@@ -24,6 +24,21 @@
 8. 暗色亮色主题
 9. 移动端支持
 
+## 置顶文章
+
+```markdown
+---
+top: true
+---
+```
+
+## 添加文章封面图
+```markdown
+---
+coverImg: xxxx
+---
+```
+
 ## 主题
 
 - default
@@ -42,3 +57,4 @@ pnpm run blog:dev
 # 打包
 pnpm run blog:build
 ```
+````
