@@ -21,10 +21,12 @@
   "devDependencies": {
     "@types/node": "^18.11.9",
     "sass": "^1.57.1",
-    "vite": "3",
-    "vitepress": "1.0.0-alpha.28"
+    "vite": "3"
   },
   "dependencies": {
+    "vitepress": "1.0.0-alpha.28",
+    "bootstrap-icons-vue": "^1.8.1",
+    "deepmerge": "^4.2.2",
     "vue": "^3.2.45",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-image-lazy-loading": "^1.2.0",
