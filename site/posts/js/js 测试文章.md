@@ -4,7 +4,7 @@ top: true
 tags:
   - 测试
   - 原型链
-coverImg: /Snipaste_2022-10-12_23-24-47.png
+coverImg: /easy-blog/Snipaste_2022-10-12_23-24-47.png
 updateDate: 2020
 --- 
 
