@@ -1,0 +1,38 @@
+{
+  "name": "mr7ish",
+  "version": "1.0.0",
+  "description": "Im Mr7fish",
+  "main": "index.js",
+  "scripts": {
+    "blog:dev": "vitepress dev ./",
+    "blog:build": "vitepress build ./",
+    "blog:serve": "vitepress serve ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr7ish/mr7ish.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Mr7ish/mr7ish/issues"
+  },
+  "homepage": "https://github.com/Mr7ish/mr7ish#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "sass": "^1.57.1",
+    "vite": "3",
+    "vitepress": "1.0.0-alpha.28"
+  },
+  "dependencies": {
+    "vue": "^3.2.45",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-image-lazy-loading": "^1.2.0",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-mathjax": "^2.0.0",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.1"
+  }
+}

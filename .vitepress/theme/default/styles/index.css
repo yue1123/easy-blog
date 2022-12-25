@@ -1,0 +1,14 @@
+@import url('./utils.css');
+
+.VPBadge {
+  margin-top: 15px;
+}
+
+.VPContent .content {
+  position: relative;
+  z-index: 2;
+}
+
+.VPContent .content * {
+  pointer-events: auto;
+}
