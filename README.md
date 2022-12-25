@@ -1,6 +1,6 @@
-# vitepress-blog
+# easy-blog
 
-基于 vitepress 的静态博客生成
+基于 vitepress 的静态博客生成，五分钟搭建一个属于自己的博客
 
 ## 亮点
 
@@ -34,7 +34,7 @@
 
 ```shell
 # 克隆本仓库
-git clone
+git clone https://github.com/yue1123/easy-blog.git
 # 安装依赖
 pnpm install
 # 本地运行
