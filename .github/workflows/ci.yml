@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build:
     timeout-minutes: 20
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: 16
 
       - uses: pnpm/action-setup@v2.2.2
@@ -21,7 +21,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run blog:build 
+        run: pnpm run blog:build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -29,4 +29,3 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages
           FOLDER: .vitepress/dist
-
