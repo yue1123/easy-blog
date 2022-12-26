@@ -40,6 +40,15 @@ coverImg: xxxx
 ---
 ```
 
+### 添加 tag
+
+```
+---
+tags:
+  - 随笔
+---
+```
+
 ## 主题
 
 - default [预览](https://yue1123.github.io/easy-blog/)
@@ -57,11 +66,23 @@ pnpm install
 pnpm run blog:dev
 ```
 
-## 2. 推送部署
+## 2. 更改仓库地址
+
+先新建一个自己 github 的仓库，设置名字为`用户名.github.io`（这样就可以获得一个域名指向当前仓库）
+
+然后更改克隆的仓库地址为新建仓库地址:
+
+```shell
+git remote rm origin
+git remote add origin [新建仓库地址]
+
+```
+
+## 3. 推送部署
 
 写完文章后不需要本地打包, 推送到 github 会自动部署博客到分支 `gh-pages`
 
-## 3. 配置 git pages
+## 4. 配置 git pages
 
 仓库 Settings > Pages > 选择 `gh-pages` 分支根目录 > 保存
 
