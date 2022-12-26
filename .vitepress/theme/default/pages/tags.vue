@@ -20,7 +20,7 @@
         <div class="post_list-content space-y-4">
           <div class="post-item space-y-2" v-for="post in currentTagPost.posts">
             <div class="post-title">
-              <a :href="post.url">
+              <a :href="withBase(post.url)">
                 {{ post.title }}
               </a>
             </div>
@@ -35,6 +35,7 @@
 
 <script setup lang="ts">
   import { ref, computed, onBeforeMount } from 'vue'
+  import { withBase } from 'vitepress'
   import { postList } from '../../../utils/getPostList'
   import PostMeta from '../components/PostMeta.vue'
   const currentTag = ref<string | null>()

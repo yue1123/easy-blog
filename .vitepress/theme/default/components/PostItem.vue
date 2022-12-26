@@ -2,7 +2,7 @@
   <div class="post_item-container">
     <div class="post_item-content">
       <h2>
-        <a :href="url">
+        <a :href="withBase(url)">
           {{ props.title }}
           <Badge v-if="props.top" type="tip" text="置顶" />
         </a>
@@ -11,24 +11,34 @@
       <PostMeta :tags="props.tags" :createTime="props.createTime" />
     </div>
     <div class="post_item-image" v-if="props.coverImg">
-      <img :src="props.coverImg" alt="coverImg" />
+      <img :src="coverImg" alt="coverImg" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
   import PostMeta from './PostMeta.vue'
+  import { withBase } from 'vitepress'
+  import { computed } from 'vue'
   interface Props {
     title: string
     snippets?: string
     coverImg?: string
     createTime: number
+    localePath: string
     url: string
     top?: boolean
     tags?: string[]
   }
 
   const props = defineProps<Props>()
+  const coverImg = computed(() => {
+    const coverImg = props.coverImg
+    if (coverImg && !coverImg.startsWith(props.localePath)) {
+      return withBase(coverImg)
+    }
+    return coverImg
+  })
 </script>
 
 <style lang="scss" scoped>

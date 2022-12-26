@@ -10,7 +10,7 @@
         <div class="timeline-item-wrapper space-y-2">
           <template v-if="item.type === 'post'">
             <div class="content">
-              <a v-if="item.type === 'post'" :href="item.url">
+              <a v-if="item.type === 'post'" :href="withBase(item.url)">
                 {{ item.title }}
               </a>
             </div>
@@ -28,6 +28,7 @@
 <script setup lang="ts">
   import { BIconPencilSquare } from 'bootstrap-icons-vue'
   import { computed } from 'vue'
+  import { withBase } from 'vitepress'
   import PostMeta from '../components/PostMeta.vue'
   import { postList } from '../../../utils'
 

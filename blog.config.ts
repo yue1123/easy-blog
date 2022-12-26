@@ -24,3 +24,5 @@ const config: BlogConfig = {
 }
 
 export default config
+
+//TODO: with base url 处理

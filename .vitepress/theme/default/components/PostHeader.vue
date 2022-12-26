@@ -7,14 +7,22 @@
     <PostMeta class="meta" :tags="frontmatter.tags" :createTime="frontmatter.createTime" />
   </div>
   <div class="post_header-img" v-if="frontmatter.coverImg">
-    <img :src="frontmatter.coverImg" alt="" />
+    <img :src="coverImg" alt="" />
   </div>
 </template>
 
 <script setup lang="ts">
-  import { useData } from 'vitepress'
+  import { useData, withBase } from 'vitepress'
+  import { computed } from 'vue'
   import PostMeta from './PostMeta.vue'
-  const { frontmatter } = useData()
+  const { frontmatter, localePath } = useData()
+  const coverImg = computed(() => {
+    const coverImg = frontmatter.value.coverImg
+    if (coverImg && !coverImg.startsWith(localePath)) {
+      return withBase(coverImg)
+    }
+    return coverImg
+  })
 </script>
 
 <style lang="scss" scoped>
