@@ -18,7 +18,7 @@
   const { frontmatter, localePath } = useData()
   const coverImg = computed(() => {
     const coverImg = frontmatter.value.coverImg
-    if (coverImg && !coverImg.startsWith(localePath)) {
+    if (coverImg && !coverImg.startsWith(localePath.value)) {
       return withBase(coverImg)
     }
     return coverImg
