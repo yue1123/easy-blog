@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as s,o,r as n}from"./posts_markdown \u8BED\u6CD5.md.552d8f24.js";const g=JSON.parse('{"title":"","description":"","frontmatter":{"aside":false},"headers":[],"relativePath":"tags.md"}'),r={name:"tags.md"};function c(d,p,_,i,l,m){const e=n("TagsIndex");return o(),a("div",null,[s(e)])}const u=t(r,[["render",c]]);export{g as __pageData,u as default};
