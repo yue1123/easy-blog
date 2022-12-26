@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as n,o,r as s}from"./posts_js_js \u6D4B\u8BD5\u6587\u7AE0.md.9325f58e.js";const x=JSON.parse('{"title":"","description":"","frontmatter":{"aside":false},"headers":[],"relativePath":"index.md"}'),r={name:"index.md"};function c(d,i,p,_,l,m){const e=s("PageIndex");return o(),a("div",null,[n(e)])}const u=t(r,[["render",c]]);export{x as __pageData,u as default};
