@@ -24,7 +24,7 @@
 8. 暗色亮色主题
 9. 移动端支持
 
-## 置顶文章
+### 置顶文章
 
 ```markdown
 ---
@@ -32,7 +32,8 @@ top: true
 ---
 ```
 
-## 添加文章封面图
+### 添加文章封面图
+
 ```markdown
 ---
 coverImg: xxxx
@@ -45,7 +46,7 @@ coverImg: xxxx
 
 目前只开发了一个默认的主题，欢迎小伙伴们贡献自己的主题
 
-## 安装
+## 1. 安装
 
 ```shell
 # 克隆本仓库
@@ -54,6 +55,14 @@ git clone https://github.com/yue1123/easy-blog.git
 pnpm install
 # 本地运行
 pnpm run blog:dev
-# 打包
-pnpm run blog:build
 ```
+
+## 2. 推送部署
+
+写完文章后不需要本地打包, 推送到 github 会自动部署博客到分支 `gh-pages`
+
+## 3. 配置 git pages
+
+仓库 Settings > Pages > 选择 `gh-pages` 分支根目录 > 保存
+
+恭喜你，拥有了自己的博客
