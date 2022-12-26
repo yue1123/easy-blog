@@ -24,10 +24,8 @@
     "vite": "3"
   },
   "dependencies": {
-    "vitepress": "1.0.0-alpha.28",
     "bootstrap-icons-vue": "^1.8.1",
     "deepmerge": "^4.2.2",
-    "vue": "^3.2.45",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-image-lazy-loading": "^1.2.0",
     "markdown-it-imsize": "^2.0.1",
@@ -35,6 +33,9 @@
     "markdown-it-mathjax": "^2.0.0",
     "markdown-it-sub": "^1.0.0",
     "markdown-it-sup": "^1.0.0",
-    "markdown-it-task-lists": "^2.1.1"
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-textual-uml": "^0.12.0",
+    "vitepress": "1.0.0-alpha.28",
+    "vue": "^3.2.45"
   }
 }
